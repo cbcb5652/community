@@ -83,5 +83,4 @@ public class AuthorizeController {
         response.addCookie(cookie);
         return "redirect:/";
     }
-
 }

@@ -27,7 +27,6 @@ public class PublicController {
                        Model model){
         QuestionDTO question = questionService.getById(id);
         model.addAttribute("title",question.getTitle());
-        System.out.println("!!!!!"+question.getDescription());
         model.addAttribute("description",question.getDescription());
         model.addAttribute("tag",question.getTag());
         model.addAttribute("id",question.getId());
