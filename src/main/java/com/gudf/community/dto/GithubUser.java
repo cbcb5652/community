@@ -3,16 +3,12 @@ package com.gudf.community.dto;
 import lombok.Data;
 
 /**
- * @Author: CB#
- * @Date: 2019/7/16
- * @Description: com.gudf.community.dto
- * @version: 1.0
+ * Created by codedrinker on 2019/4/24.
  */
 @Data
 public class GithubUser {
     private String name;
     private Long id;
     private String bio;
-    private String avatar_url;
-
+    private String avatarUrl;
 }
