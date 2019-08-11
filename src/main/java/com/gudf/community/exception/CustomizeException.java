@@ -1,21 +1,23 @@
 package com.gudf.community.exception;
 
-import javax.swing.*;
-
+/**
+ * Created by codedrinker on 2019/5/28.
+ */
 public class CustomizeException extends RuntimeException {
-
     private String message;
+    private Integer code;
 
-    public CustomizeException(ICustomizeErrorCode errorCode){
+    public CustomizeException(ICustomizeErrorCode errorCode) {
+        this.code = errorCode.getCode();
         this.message = errorCode.getMessage();
     }
 
-    public CustomizeException(String message){
-        this.message = message;
+    @Override
+    public String getMessage() {
+        return message;
     }
 
-    @Override
-    public String getMessage(){
-        return  message;
+    public Integer getCode() {
+        return code;
     }
 }

@@ -1,5 +1,9 @@
 package com.gudf.community.exception;
 
+/**
+ * Created by codedrinker on 2019/5/28.
+ */
 public interface ICustomizeErrorCode {
-    String getMessage();
+    String getMessage() ;
+    Integer getCode();
 }
