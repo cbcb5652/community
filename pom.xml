@@ -9,6 +9,7 @@
 <!--        <version>2.1.6.RELEASE</version>-->
 <!--        <relativePath>../</relativePath>-->
 <!--    </parent>-->
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -25,7 +26,6 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
 
     <dependencies>
         <dependency>
