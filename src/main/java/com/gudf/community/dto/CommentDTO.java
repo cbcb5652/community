@@ -3,9 +3,7 @@ package com.gudf.community.dto;
 import com.gudf.community.model.User;
 import lombok.Data;
 
-/**
- * Created by codedrinker on 2019/6/2.
- */
+
 @Data
 public class CommentDTO {
     private Long id;

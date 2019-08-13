@@ -17,9 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
-/**
- * Created by codedrinker on 2019/4/24.
- */
+
 @Controller
 public class AuthorizeController {
 

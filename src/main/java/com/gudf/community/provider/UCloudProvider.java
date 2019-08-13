@@ -16,9 +16,7 @@ import org.springframework.stereotype.Service;
 import java.io.InputStream;
 import java.util.UUID;
 
-/**
- * Created by codedrinker on 2019/6/28.
- */
+
 @Service
 @Slf4j
 public class UCloudProvider {

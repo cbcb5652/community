@@ -2,9 +2,7 @@ package com.gudf.community.dto;
 
 import lombok.Data;
 
-/**
- * Created by codedrinker on 2019/5/30.
- */
+
 @Data
 public class CommentCreateDTO {
     private Long parentId;
