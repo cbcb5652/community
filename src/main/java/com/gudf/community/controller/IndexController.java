@@ -1,6 +1,7 @@
 package com.gudf.community.controller;
 
 import com.gudf.community.cache.HotTagCache;
+import com.gudf.community.dto.GithubUser;
 import com.gudf.community.dto.PaginationDTO;
 import com.gudf.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -37,8 +39,10 @@ public class IndexController {
     }
 
     @GetMapping("/test")
-    public Model test(Model model){
-        model.addAttribute("test","这是一行测试代码");
-        return model;
+    @ResponseBody
+    public String index(Model model){
+        return "这是一行测试";
     }
+
+
 }
