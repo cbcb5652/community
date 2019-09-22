@@ -35,4 +35,10 @@ public class IndexController {
         model.addAttribute("tags", tags);
         return "index";
     }
+
+    @GetMapping("/test")
+    public Model test(Model model){
+        model.addAttribute("test","这是一行测试代码");
+        return model;
+    }
 }
