@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 
-
 @Component
 @Data
 public class HotTagCache {

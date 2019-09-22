@@ -53,7 +53,7 @@ public class QuestionService {
 
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
         questionQueryDTO.setSearch(search);
-        if(StringUtils.isNotBlank(tag)){
+        if (StringUtils.isNotBlank(tag)) {
             tag = tag.replace("+", "").replace("*", "");
             questionQueryDTO.setTag(tag);
         }
@@ -198,11 +198,11 @@ public class QuestionService {
         }
         String[] tags = StringUtils.split(queryDTO.getTag(), ",");
         String regexpTag = Arrays
-                    .stream(tags)
-                    .filter(StringUtils::isNotBlank)
-                    .map(t -> t.replace("+", "").replace("*", ""))
-                    .filter(StringUtils::isNotBlank)
-                    .collect(Collectors.joining("|"));
+                .stream(tags)
+                .filter(StringUtils::isNotBlank)
+                .map(t -> t.replace("+", "").replace("*", ""))
+                .filter(StringUtils::isNotBlank)
+                .collect(Collectors.joining("|"));
         Question question = new Question();
         question.setId(queryDTO.getId());
         question.setTag(regexpTag);

@@ -18,9 +18,9 @@
         <result column="COMMENT_COUNT" jdbcType="INTEGER" property="commentCount"/>
     </resultMap>
     <update id="incCommentCount" parameterType="com.gudf.community.model.Comment">
-    update COMMENT
-    set
-    COMMENT_COUNT = COMMENT_COUNT + #{commentCount,jdbcType=INTEGER}
-    where id = #{id}
+        update COMMENT
+        set
+        COMMENT_COUNT = COMMENT_COUNT + #{commentCount,jdbcType=INTEGER}
+        where id = #{id}
     </update>
 </mapper>

@@ -2,9 +2,12 @@ package com.gudf.community.mapper;
 
 import com.gudf.community.model.Question;
 import com.gudf.community.model.QuestionExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;
+
 
 public interface QuestionMapper {
     /**

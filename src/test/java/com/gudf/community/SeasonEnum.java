@@ -3,10 +3,10 @@ package com.gudf.community;
 public enum SeasonEnum {
 
 
-    SPRING(1,"春天","春天天气不错哦"),
-    SUMMER(2,"夏天","夏天有点热"),
-    Autumn(3,"秋天","秋天到了很凉爽"),
-    WINTER(3,"冬天","冬天有点冷");
+    SPRING(1, "春天", "春天天气不错哦"),
+    SUMMER(2, "夏天", "夏天有点热"),
+    Autumn(3, "秋天", "秋天到了很凉爽"),
+    WINTER(3, "冬天", "冬天有点冷");
 
     private int index;
     private String season;
