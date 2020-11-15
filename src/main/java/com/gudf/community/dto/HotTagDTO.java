@@ -2,7 +2,6 @@ package com.gudf.community.dto;
 
 import lombok.Data;
 
-
 @Data
 public class HotTagDTO implements Comparable {
     private String name;
